@@ -1,0 +1,58 @@
+clear
+
+(miav) cori@cori-VirtualBox:~$ django-admin startproject
+usage: django-admin startproject [-h] [--version] [-v {0,1,2,3}]
+                                 [--settings SETTINGS]
+                                 [--pythonpath PYTHONPATH] [--traceback]
+                                 [--no-color] [--template TEMPLATE]
+                                 [--extension EXTENSIONS] [--name FILES]
+                                 name [directory]
+django-admin startproject: error: You must provide a project name.
+(miav) cori@cori-VirtualBox:~$ django-admin startproject misitio .
+(miav) cori@cori-VirtualBox:~$ ls
+Descargas    Documentos  examples.desktop  manage.py  misitio  Plantillas  python-web      Vídeos
+djangogirls  Escritorio  Imágenes          miav       Música   Público     python-web.zip
+(miav) cori@cori-VirtualBox:~$ ls 
+Descargas    Documentos  examples.desktop  manage.py  misitio  Plantillas  python-web      Vídeos
+djangogirls  Escritorio  Imágenes          miav       Música   Público     python-web.zip
+(miav) cori@cori-VirtualBox:~$ cd djangogirls
+(miav) cori@cori-VirtualBox:~/djangogirls$ sudo apt-get install python3-venv
+[sudo] password for cori: 
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+python3-venv ya está en su versión más reciente (3.5.1-3).
+Los paquetes indicados a continuación se instalaron de forma automática y ya no son necesarios.
+  libpng16-16 linux-headers-4.4.0-21 linux-headers-4.4.0-21-generic linux-image-4.4.0-21-generic linux-image-extra-4.4.0-21-generic
+Utilice «sudo apt autoremove» para eliminarlos.
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 373 no actualizados.
+(miav) cori@cori-VirtualBox:~/djangogirls$ python3 -m venv miav
+(miav) cori@cori-VirtualBox:~/djangogirls$ ls miav/
+bin  include  lib  lib64  pyvenv.cfg  share
+(miav) cori@cori-VirtualBox:~/djangogirls$ source miav/bin/activate
+(miav) cori@cori-VirtualBox:~/djangogirls$ pip install django
+Collecting django
+  Using cached Django-1.11.4-py2.py3-none-any.whl
+Collecting pytz (from django)
+  Using cached pytz-2017.2-py2.py3-none-any.whl
+Installing collected packages: pytz, django
+Successfully installed django-1.11.4 pytz-2017.2
+You are using pip version 8.1.1, however version 9.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(miav) cori@cori-VirtualBox:~/djangogirls$ pip install --upgrade pip
+Collecting pip
+  Using cached pip-9.0.1-py2.py3-none-any.whl
+Installing collected packages: pip
+  Found existing installation: pip 8.1.1
+    Uninstalling pip-8.1.1:
+      Successfully uninstalled pip-8.1.1
+Successfully installed pip-9.0.1
+(miav) cori@cori-VirtualBox:~/djangogirls$ django-admin startproject
+usage: django-admin startproject [-h] [--version] [-v {0,1,2,3}]
+                                 [--settings SETTINGS]
+                                 [--pythonpath PYTHONPATH] [--traceback]
+                                 [--no-color] [--template TEMPLATE]
+                                 [--extension EXTENSIONS] [--name FILES]
+                                 name [directory]
+django-admin startproject: error: You must provide a project name.
+
