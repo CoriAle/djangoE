@@ -5,6 +5,13 @@
     <title>Django girls</title>
   </head>
   <body>
-    <h1>Hola mundo</h1>
+    <h1>Hola mundo </h1>
+    {% for p in pub %}
+    <div>
+      <p>Published : {{p.fecha_publicacion}}</p>
+      <h1><a href="#">{{p.titulo}}</a></h1>
+      <p>{{p.texto | linebreaksbr}}</p>
+    </div>
+    {% endfor %}
   </body>
 </html>
