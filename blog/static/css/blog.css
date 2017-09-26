@@ -50,6 +50,8 @@ body{
 
    .post {
        margin-bottom: 70px;
+       display: block !important;
+       color: #d564564;
    }
 
    .post h1 a, .post h1 a:visited {

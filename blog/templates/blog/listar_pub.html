@@ -6,7 +6,7 @@
   <p>Published : {{p.fecha_publicacion}}</p>
   <h1><a href="{% url 'postear' pk=p.pk %}">{{p.titulo}}</a></h1>
   <p>{{p.texto | linebreaksbr}}</p>
-  {p}
+  
 </div>
 {% endfor %}
 {% endblock content %}
